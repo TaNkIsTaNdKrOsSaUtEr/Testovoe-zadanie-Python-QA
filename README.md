@@ -7,21 +7,20 @@
 ## Структура репозитория
 
 file-transfer/
-|
 ├── .gitignore
 ├── README.md
 ├── tcp/
-│   ├── src/
-│   │   ├── server.py
-│   │   └── client.py
-│   └── test/
-│       └── test.sh
+│ ├── src/
+│ │ ├── server.py
+│ │ └── client.py
+│ └── test/
+│ └── test.sh
 └── udp/
-    ├── src/
-    │   ├── server.py
-    │   └── client.py
-    └── test/
-        └── test.sh
+├── src/
+│ ├── server.py
+│ └── client.py
+└── test/
+└── test.sh
 
 
 ## Требования
@@ -167,6 +166,7 @@ UDP
 Автор
 
 Егор Белов
+
 
 
 

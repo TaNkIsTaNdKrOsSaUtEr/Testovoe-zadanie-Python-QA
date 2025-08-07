@@ -30,7 +30,7 @@ file-transfer/
 - Python 3.6+
 - Bash (для запуска тестов)
 
-## Установка
+## Установка и эксплуатация
 ```bash
 git clone https://github.com/<ваш-username>/file-transfer.git
 cd file-transfer
@@ -169,6 +169,7 @@ UDP
 Автор
 
 Егор Белов
+
 
 
 

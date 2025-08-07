@@ -5,14 +5,14 @@ from typing import Tuple
 
 
 def get_file_info(file_path: str) -> Tuple[str, int]:
-    """Получить имя файла и его размер."""
+    """Получить имя файла и его размер"""
     file_name = os.path.basename(file_path)
     file_size = os.path.getsize(file_path)
     return file_name, file_size
 
 
 def send_file(conn: socket.socket, file_path: str) -> None:
-    """Отправка файла клиенту."""
+    """Отправка файла клиенту"""
     file_name, file_size = get_file_info(file_path)
 
     # Отправляем информацию о файле
@@ -32,7 +32,7 @@ def send_file(conn: socket.socket, file_path: str) -> None:
 
 
 def main() -> None:
-    """Основная функция сервера."""
+    """Основная функция сервера"""
     if len(sys.argv) != 2:
         print("Usage: python server.py <file>")
         sys.exit(1)
@@ -56,3 +56,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

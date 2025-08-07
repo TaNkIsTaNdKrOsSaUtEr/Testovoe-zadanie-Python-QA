@@ -9,7 +9,7 @@ TIMEOUT = 0.1
 
 
 def get_file_info(file_path: str) -> Tuple[str, int]:
-    """Получить имя файла и его размер."""
+    """Получить имя файла и его размер"""
     file_name = os.path.basename(file_path)
     file_size = os.path.getsize(file_path)
     return file_name, file_size
@@ -20,7 +20,7 @@ def send_file(
     client_addr: Tuple[str, int],
     file_path: str
 ) -> None:
-    """Отправка файла через UDP."""
+    """Отправка файла через UDP"""
     file_name, file_size = get_file_info(file_path)
 
     # Отправляем метаданные
@@ -55,7 +55,7 @@ def send_file(
 
 
 def main() -> None:
-    """Основная функция сервера."""
+    """Основная функция сервера"""
     if len(sys.argv) != 2:
         print("Usage: python server.py <file>")
         sys.exit(1)
@@ -79,3 +79,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

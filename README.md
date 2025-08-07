@@ -6,21 +6,25 @@
   
 ## Структура репозитория
 
-  file-transfer/
-  ├── .gitignore
-  ├── README.md
-  ├── tcp/
-  │   ├── src/
-  │   │   ├── server.py
-  │   │   └── client.py
-  │   └── test/
-  │       └── test.sh
-  └── udp/
-      ├── src/
-      │   ├── server.py
-      │   └── client.py
-      └── test/
-          └── test.sh
+````markdown
+```
+file-transfer/
+├── .gitignore
+├── README.md
+├── tcp/
+│   ├── src/
+│   │   ├── server.py
+│   │   └── client.py
+│   └── test/
+│       └── test.sh
+└── udp/
+    ├── src/
+    │   ├── server.py
+    │   └── client.py
+    └── test/
+        └── test.sh
+```
+````
 
 ## Требования
 - Python 3.6+
@@ -165,6 +169,7 @@ UDP
 Автор
 
 Егор Белов
+
 
 
 

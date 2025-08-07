@@ -5,13 +5,13 @@ from typing import Tuple
 
 
 def parse_file_info(file_info: str) -> Tuple[str, int]:
-    """Разобрать информацию о файле."""
+    """Разобрать информацию о файле"""
     file_name, file_size_str = file_info.split(",")
     return file_name, int(file_size_str)
 
 
 def save_file(conn: socket.socket, file_name: str, file_size: int) -> None:
-    """Сохранение полученного файла."""
+    """Сохранение полученного файла"""
     save_path = os.path.join(os.getcwd(), file_name)
     with open(save_path, "wb") as f:
         bytes_received = 0
@@ -25,7 +25,7 @@ def save_file(conn: socket.socket, file_name: str, file_size: int) -> None:
 
 
 def main() -> None:
-    """Основная функция клиента."""
+    """Основная функция клиента"""
     if len(sys.argv) != 2:
         print("Usage: python client.py <output_file>")
         sys.exit(1)
@@ -51,3 +51,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
